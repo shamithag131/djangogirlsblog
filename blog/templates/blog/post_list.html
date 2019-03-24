@@ -1,0 +1,66 @@
+
+    
+<!DOCTYPE html>
+    <html>
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Django Girls blog</title>
+        <!-- Font Awesome -->
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css" rel="stylesheet">
+<script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet"type="text/css" media="screen"  href="blog.css">
+
+
+
+
+
+    </head>
+    <body>
+
+            
+
+                    <div class ="bgr" >
+                    <img class="bg" src="https://djangogirls.org/uploads/event/cities/Django-Girls1.jpg">
+                    </div>
+                
+                
+            <div>
+                    <h1><a href="/">Django Girls Blog</a></h1>
+                </div>
+                
+                {% for post in posts %}
+                    <div>
+
+
+
+                        
+                        <p>published: {{ post.published_date }}</p>
+                        <h2><a href="">{{ post.title }}</a></h2>
+                        <p>{{ post.text|linebreaksbr }}</p>
+                    </div>
+                {% endfor %}
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js"></script>
+
+    </body>
+
+</html>
